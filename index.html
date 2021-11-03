@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+        body{
+            /*background-image: url(./assets/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png);*/
+            height: 800px;
+            width: 800px;
+        }
+        #game{
+            display: flex;
+            flex-flow: column wrap;
+            height: 180px;
+        }
+        .monstres{
+            display: flexbox;
+            align-content: flex-start;
+        }
+        .perso{
+            display: flexbox;
+            align-content: flex-end;
+        }
+
+
+
+        #interfaceBas{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            margin-top: 100px;
+        }
+        .infosPerso{
+            display: flexbox;
+            background-image: url(./assets/PNG/panel_blue.png);
+            width: 100px;
+            height: 100px;
+        }
+        .etatperso{
+        }
+        .pvperso{
+            font-size: 0;
+            margin-left: 10px;
+        }
+        .manaperso{
+            font-size: 0;
+            margin-left: 10px;
+        }
+        .imgBar{
+            margin: 0px;
+            padding: 0px;
+        }
+        #actions{
+            display: flexbox;
+            background-image: url(./assets/PNG/panel_brown.png);
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+        .action{
+            margin-top: 5%;
+        }
+        .action:hover{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="InterfaceHaut">
+    </div>
+    <div id="game">
+        <div class="monstres">
+            <div id="monstre1">
+                <img src="./assets/Horns Skull Sprite sheets/Transparent PNG/idle/frame-1.png" width="50" height="60">
+            </div>
+            <div id="monstre2">
+                <img src="./assets/Land monster sprite sheets/transparent PNG/standing/frame-1.png" width="50" height="60">
+            </div>
+            <div id="monstre3">
+                <img src="./assets/pink monster sprite sheets/transparent PNG/idle/frame-1.png" width="50" height="60">
+            </div>
+        </div>
+        <div class="perso">
+            <div id="perso1">
+                <img src="./assets/Peso/Transparent PNG/idle/frame-1.png" width="50" height="60">
+            </div>
+            <div id="perso2">
+                <img src="./assets/Green Horn Monster Sprite Sheets/transparent PNG/idle/frame-1.png" width="50" height="60">
+            </div>
+            <div id="perso3">
+                <img src="./assets/spiky monster obstacle/spiky-monster.png" width="50" height="60">
+            </div>
+            <div id="perso4">
+                <img src="./assets/ufo_game_enemy/ufo_game_enemy.png" width="50" height="60">
+            </div>
+        </div>
+    </div>
+    <div id="interfaceBas">
+        <div class="infosPerso" id="perso1">
+            <div class="etatPerso">
+                <img src="./assets/PNG/buttonSquare_grey_pressed.png" width="30" height="30">
+            </div>
+            <div class="nomPerso">
+                Pierre
+            </div>
+            <div class="pvperso">
+                PV
+                <img src="./assets/PNG/barRed_horizontalLeft.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="./assets/PNG/barRed_horizontalRight.png" class="imgBar"alt="pv">
+            </div>
+            <div class="manaperso">
+                MANA
+                <img src="./assets/PNG/barBlue_horizontalLeft.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="./assets/PNG/barBlue_horizontalRight.png" class="imgBar" alt="mana">
+            </div>
+        </div>
+        <div class="infosPerso" id="perso2">
+            <div class="etatPerso">
+                <img src="./assets/PNG/buttonSquare_grey_pressed.png" width="30" height="30">
+            </div>
+            <div class="nomPerso">
+                Paul
+            </div>
+            <div class="pvperso">
+                PV
+                <img src="./assets/PNG/barRed_horizontalLeft.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="./assets/PNG/barRed_horizontalRight.png" class="imgBar"alt="pv">
+            </div>
+            <div class="manaperso">
+                MANA
+                <img src="./assets/PNG/barBlue_horizontalLeft.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="./assets/PNG/barBlue_horizontalRight.png" class="imgBar"alt="mana">
+            </div>
+        </div>
+        <div class="infosPerso" id="perso3">
+            <div class="etatPerso">
+                <img src="./assets/PNG/buttonSquare_grey_pressed.png" width="30" height="30">
+            </div>
+            <div class="nomPerso">
+                Jacques
+            </div>
+            <div class="pvperso">
+                PV
+                <img src="./assets/PNG/barRed_horizontalLeft.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="./assets/PNG/barRed_horizontalRight.png" class="imgBar"alt="pv">
+            </div>
+            <div class="manaperso">
+                MANA
+                <img src="./assets/PNG/barBlue_horizontalLeft.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="./assets/PNG/barBlue_horizontalRight.png" class="imgBar"alt="mana">
+            </div>
+        </div>
+        <div class="infosPerso" id="perso4">
+            <div class="etatPerso">
+                <img src="./assets/PNG/buttonSquare_grey_pressed.png" width="30" height="30">
+            </div>
+            <div class="nomPerso">
+                Albert
+            </div>
+            <div class="pvperso">
+                PV
+                <img src="./assets/PNG/barRed_horizontalLeft.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="assets/PNG/barRed_horizontalMid.png" class="imgBar"alt="pv">
+                <img src="./assets/PNG/barRed_horizontalRight.png" class="imgBar"alt="pv">
+            </div>
+            <div class="manaperso">
+                MANA
+                <img src="./assets/PNG/barBlue_horizontalLeft.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="assets/PNG/barBlue_horizontalMid.png" class="imgBar"alt="mana">
+                <img src="./assets/PNG/barBlue_horizontalRight.png" class="imgBar"alt="mana">
+            </div>
+        </div>
+        <div id="actions">
+            <div class="action">ATTAQUE</div>
+            <div class="action">DEFENSE</div>
+            <div class="action">MAGIE</div>
+            <div class="action">ITEM</div>
+        </div>
+    </div>
+</body>
+</html>
